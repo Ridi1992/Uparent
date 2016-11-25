@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/topbarheigth"
+        android:background="@color/topbar"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/bartitle"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="日常信息"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/toptitle" />
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="@android:color/white"
+            android:background="@drawable/back"
+             android:drawableLeft="@drawable/backimg"
+            android:textSize="14sp" />
+        <TextView
+            android:visibility="gone"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:text="选班级"
+            android:textColor="@android:color/white"
+            android:background="@drawable/back"
+            android:textSize="14sp" />
+    </FrameLayout>
+	<com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/backhuise"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:scrollbars="@null"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" />
+</LinearLayout>

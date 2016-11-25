@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pop">#B3A5A5A5</color>
+    <color name="dialog_line_color"> #EAE8E8 </color><!-- 分隔线 -->
+    <color name="dialog_green"> #0BB55E </color><!-- 绿色 -->
+    <color name="dialog_item_text_color"> #ffffff </color><!-- 字体颜色-->
+    <!-- listview -->
+    <color name="dialog_pop_item_pre"> #007E3D</color><!--pop item_pre -->
+    <color name="dialog_listview_item_pre"> #CCEEDD</color><!-- item_pre -->
+    <color name="dialog_listview_item_nor"> #ffffff</color><!-- item_nor -->
+<!-- listview -->
+</resources>

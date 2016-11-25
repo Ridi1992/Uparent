@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:background="@drawable/dialog_default_style"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/dialog_base_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="4144444"
+        android:textColor="#2C2C2C"
+        android:textSize="22sp"/>
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d3d3d3"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/dialog_base_text_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="4144444"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textColor="#222222"
+        />
+    
+<View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d3d3d3" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/dialog_base_confirm_btn"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:text="确定"
+            android:textColor="#34B8F4"
+            android:textSize="22sp"
+            android:background="@drawable/dialog_bottom_btn_bg"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

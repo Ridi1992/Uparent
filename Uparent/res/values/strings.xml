@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">优管家</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="aboutour">
+        \t\t陕西优管家电子商务有限公司,于2015年8月创立于陕西西安,是一家立足陕西,面向全国,致力于幼儿教育信息化的科技型公司.
+        \n\t\t自成立以来，公司时刻关注幼儿教育行业,满足其管理软件的市场需求,专注于研发具有自主核心技术和知识产权的软件产品,专业从事幼儿园管理软件产品的研制、开发、销售及服务。
+        \n\t\t公司以幼儿园管理的规范化、信息化为己任，以开发适合的幼儿园管理软件为使命，研发出“优家优宝”系列幼儿园管理软件，满足了不同规模幼儿园管理的需求。
+		\n\t\t公司秉持“诚信务实、专业高效”的企业核心价值观,拥有一支专业、富有激情的研发、销售、服务团队，坚持以高度的责任感和创造力实现客户价值，追求技术领先，致力永恒发展，秉持最好的服务品质，以优秀的技术和专业化的服务帮助客户提升运营绩效，推动幼儿教育行业信息化的建设进程。</string>
+
+<!--     jpush -->
+	<string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+<!--     jpush -->
+    
+</resources>

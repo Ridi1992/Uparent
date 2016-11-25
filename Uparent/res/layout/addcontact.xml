@@ -1,0 +1,302 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backhuise"
+    android:orientation="vertical" >
+	<FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/topbarheigth"
+        android:background="@color/topbar"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/bartitle"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="添加"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/toptitle" />
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="@android:color/white"
+            android:background="@drawable/back"
+             android:drawableLeft="@drawable/backimg"
+            android:textSize="14sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="添加"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+    </FrameLayout>
+
+	<ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:scrollbars="@null"
+	    android:padding="5dp"
+	    >
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        >
+	        <ImageView 
+	            android:layout_width="match_parent"
+	            android:layout_height="35dp"
+	            android:src="@drawable/head_img"
+	            android:scaleType="fitXY"
+	            />
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@color/white"
+	            android:orientation="horizontal"
+	            >
+
+	            <TextView
+	                android:layout_width="100dp"
+	                style="@style/myedittextstyle14"
+	                android:text="学生姓名"
+	                android:layout_height="30dp"
+	                android:textColor="@color/blue" />
+	            <TextView
+	                android:id="@+id/childname"
+	                style="@style/myedittextstyle14"
+	                android:layout_weight="1"
+	                android:layout_height="30dp"
+	                android:textColor="@color/blue" />
+
+	        </LinearLayout>
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@color/white"
+	            android:orientation="horizontal"
+	            >
+
+	            <TextView
+	                style="@style/myedittextstyle14"
+	                android:layout_width="100dp"
+	                android:layout_height="30dp"
+	                android:text="主  家  长"
+	                android:textColor="@color/blue" />
+
+	            <TextView
+	                android:id="@+id/parentname"
+	                style="@style/myedittextstyle14"
+	                android:layout_weight="1"
+	                android:layout_height="30dp"
+	                android:textColor="@color/blue" />
+
+	        </LinearLayout>
+	        
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="45dp"
+	            android:background="@color/white"
+	            android:orientation="horizontal"
+	            android:layout_marginTop="5dp"
+	            android:gravity="center_vertical"
+	            >
+
+	            <TextView
+	                style="@style/myedittextstyle14"
+	                android:layout_width="100dp"
+	                android:layout_height="30dp"
+	                android:text="家长姓名" />
+
+	            <EditText
+	                android:id="@+id/subparentname"
+	                style="@style/myedittextstyle14"
+	                android:layout_weight="1"
+	                android:layout_height="30dp"
+	                android:singleLine="true"/>
+
+	        </LinearLayout>
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="45dp"
+	            android:background="@color/white"
+	            android:orientation="horizontal"
+	            android:layout_marginTop="1px"
+	            android:gravity="center_vertical"
+	            >
+
+	            <TextView
+	                style="@style/myedittextstyle14"
+	                android:layout_width="100dp"
+	                android:layout_height="30dp"
+	                android:text="手机号码" />
+
+	            <EditText
+	                android:id="@+id/subtel"
+	                style="@style/myedittextstyle14"
+	                android:phoneNumber="true"
+	                android:layout_weight="1"
+	                android:layout_height="30dp"
+	                android:singleLine="true"/>
+
+	        </LinearLayout>
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="45dp"
+	            android:background="@color/white"
+	            android:orientation="horizontal"
+	            android:layout_marginTop="1px"
+	            android:gravity="center_vertical"
+	            >
+
+	            <TextView
+	                style="@style/myedittextstyle14"
+	                android:layout_width="100dp"
+	                android:layout_height="30dp"
+	                android:text="身份证号" />
+
+	            <EditText
+	                android:id="@+id/subcard"
+	                style="@style/myedittextstyle14"
+	                 android:digits="0123456789X"
+	                android:layout_weight="1"
+	                android:layout_height="30dp"
+	                android:singleLine="true"/>
+
+	        </LinearLayout>
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="45dp"
+	            android:background="@color/white"
+	            android:orientation="horizontal"
+	            android:layout_marginTop="1px"
+	            android:gravity="center_vertical"
+	            >
+
+	            <TextView
+	                style="@style/myedittextstyle14"
+	                android:layout_width="wrap_content"
+	                android:layout_height="30dp"
+	                android:text="关系" />
+	            <CheckBox
+				    android:id="@+id/check0"
+		            android:background="@drawable/checkbt"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_marginLeft="10dp"
+		            android:layout_gravity="center_vertical"
+		            android:button="@null"/>
+	            
+	            <TextView
+	                style="@style/myedittextstyle14"
+	                android:text="父子"
+	                android:layout_height="30dp"
+	                android:singleLine="true"/>
+				<CheckBox
+				    android:id="@+id/check1"
+		            android:background="@drawable/checkbt"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_marginLeft="10dp"
+		            android:layout_gravity="center_vertical"
+		            android:button="@null"/>
+	            <TextView
+	                style="@style/myedittextstyle14"
+	                android:text="母子"
+	                android:layout_height="30dp"
+	                android:singleLine="true"/>
+				
+				<CheckBox
+				    android:id="@+id/check2"
+		            android:background="@drawable/checkbt"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_marginLeft="10dp"
+		            android:layout_gravity="center_vertical"
+		            android:button="@null"/>
+				<TextView
+	                style="@style/myedittextstyle14"
+	                android:text="其他"
+	                android:layout_height="30dp"
+	                android:singleLine="true"/>
+	        </LinearLayout>
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="45dp"
+	            android:background="@color/white"
+	            android:orientation="horizontal"
+	            android:layout_marginTop="1px"
+	            android:gravity="center_vertical"
+	            >
+
+	            <TextView
+	                style="@style/myedittextstyle14"
+	                android:layout_width="100dp"
+	                android:layout_height="30dp"
+	                android:text="是否接送" />
+
+	            <CheckBox
+	                android:id="@+id/check3"
+		            android:background="@drawable/checkbt"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_marginLeft="10dp"
+		            android:layout_gravity="center_vertical"
+		            android:button="@null"/>
+	            <TextView
+	                style="@style/myedittextstyle14"
+	                android:text="是"
+	                android:layout_height="30dp"
+	                android:singleLine="true"/>
+	            <CheckBox
+	                android:id="@+id/check4"
+		            android:background="@drawable/checkbt"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_marginLeft="10dp"
+		            android:layout_gravity="center_vertical"
+		            android:button="@null"/>
+	            <TextView
+	                style="@style/myedittextstyle14"
+	                android:text="否"
+	                android:layout_height="30dp"
+	                android:singleLine="true"/>
+
+	        </LinearLayout>
+
+	        <TextView
+	            android:id="@+id/save"
+	            android:layout_width="match_parent"
+	            android:layout_height="45dp"
+	            android:layout_marginTop="50dp"
+	            android:background="@drawable/orangebt"
+	            android:gravity="center"
+	            android:text="确定"
+	            android:textColor="@color/white"
+	            android:textSize="@dimen/bttext" />
+
+	    </LinearLayout>
+	    
+	</ScrollView>
+
+
+	
+</LinearLayout>

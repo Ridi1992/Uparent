@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+	<FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/topbarheigth"
+        android:background="@color/topbar"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/toptitle" />
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="@android:color/white"
+            android:background="@drawable/back"
+             android:drawableLeft="@drawable/backimg"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_scan_barcode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="扫码" />
+     <Button
+        android:id="@+id/btn1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="委托扫描结束" />
+      <Button
+        android:id="@+id/btn2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="家长扫码结束" />
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView 
+        android:layout_margin="10dp"
+        android:id="@+id/tv_scan_result"
+       	android:layout_width="fill_parent"
+       	android:textSize="18sp"
+       	android:textColor="@android:color/black"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+    <EditText 
+        android:id="@+id/et_qr_string"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="http://tawai.seotech.com.cn/package/school.apk"
+        android:hint="输入内容"/>
+    
+    <Button
+        android:id="@+id/btn_add_qrcode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="生成邀请码" />
+    
+    <ImageView 
+        android:id="@+id/iv_qr_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

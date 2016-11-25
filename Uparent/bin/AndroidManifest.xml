@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lester.uparent"
+    android:versionCode="5"
+    android:versionName="1.0.4" >
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.lester.uparent" />
+    
+    <supports-screens
+		android:smallScreens="true"
+		android:normalScreens="true"
+		android:largeScreens="true"
+		android:resizeable="true"
+		android:anyDensity="true" />
+    
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+<!--  	<uses-permission android:name="android.permission.GET_TASKS"/> -->
+	<uses-permission android:name="android.permission.GET_TASKS"/>
+ 	<uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="WRITE_APN_SETTINGS" />
+    
+<!--     qq分享 -->
+     	<uses-permission android:name="android.permission.INTERNET" />
+		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+		<uses-permission android:name="WRITE_APN_SETTINGS"/>
+		
+		<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	.<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> 
+    <!-- mta系统的权限< -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+		<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!--     qq分享 -->
+    
+    
+	<!--     短信权限 -->
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+	<uses-permission android:name="android.permission.GET_TASKS" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<!--     短信权限 -->
+	
+<!-- 	分享权限 -->
+<uses-permission android:name="android.permission.GET_TASKS" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+  <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+  <!-- 蓝牙分享所需的权限 -->
+  <uses-permission android:name="android.permission.BLUETOOTH" />
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+  <!-- 	分享权限 -->
+  
+<!--   百度统计 -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+<!--   百度统计 -->
+  
+<!--   jupsh -->
+<permission
+        android:name="com.lester.uparent.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+  
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="com.lester.uparent.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>  
+
+    
+    
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+<!--   jupsh -->
+  
+  
+        
+    <application
+        android:allowBackup ="true"															 
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+         android:theme="@style/AppTheme"
+         android:largeHeap="true"
+        android:name="com.example.jpushdemo.ExampleApplication">
+<!--         百度统计 -->
+        <uses-library android:name="android.test.runner" />
+        <!-- 您从百度网站获取的APP KEY -->
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="d602760578" /> <!-- abcd1234 -->
+            
+        <!-- 渠道商编号 -->
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="Baidu Market" />
+
+        <!-- 是否开启错误日志统计，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_EXCEPTION_LOG"
+            android:value="true" />
+        <!-- 日志发送策略，可选值：APP_START、ONCE_A_DAY、SET_TIME_INTERVAL，默认为APP_START -->
+        <meta-data
+            android:name="BaiduMobAd_SEND_STRATEGY"
+            android:value="APP_START" />
+        <!-- 日志发送策略 为SET_TIME_INTERVAL时，需设定时间间隔(取消下行注释)。取值为1-24的整数，默认为1 -->
+        <!-- <meta-data android:name="BaiduMobAd_TIME_INTERVAL" android:value="2" /> -->
+        <!-- 日志仅在wifi网络下发送，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_ONLY_WIFI"
+            android:value="false" />
+        <!-- 是否获取基站位置信息 ,默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_CELL_LOCATION"
+            android:value="true" />
+        <!-- 是否获取GPS位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_GPS_LOCATION"
+            android:value="true" />
+        <!-- 是否获取WIFI位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_WIFI_LOCATION"
+            android:value="true" />
+        
+ <!--         百度统计 -->
+        
+        <activity
+            android:name="com.lester.uparent.Welcome"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		
+        <activity android:name="com.lester.uparent.Login"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.SelectMyChild"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.Announcementdetail"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.Register"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.MainActivity"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.GenerateCode"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.Announcement"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.zxing.activity.CaptureActivity"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.CodeDetail"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.ParentManage"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.ParentRegister"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.MyStudent"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.GetPassWord"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.Announcement_Class"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.Schoolbus"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.Teacherlist"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.Me"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.Changepassword"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.Sendmessage"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.Childinfo"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.LeaveList"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.Leavelistdetail"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.GetDate"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.LeaveApply"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.Authorize"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.AuthorApply"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.AuthorApply_detail"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.SendLog"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.school.clippic.ClipImg"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.My_message"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.Schoolinfo"
+            android:launchMode="singleTask"
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.AddConstact"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.Recipes"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.CheckCourse"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.Courselist"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.RecipesList"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.Feedback"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.Feedback_History"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.Comment"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.Commentlist"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.lester.uparent.Aboutour"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        <activity android:name="com.best.cropimage.CropImageActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:launchMode="singleTask" 
+        			android:screenOrientation="portrait"></activity>
+        
+        
+<!--  jpush -->
+
+     
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden" 
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.lester.uparent" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+    
+        
+        <!-- Required SDK 核心功能-->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+                
+            </intent-filter>
+        </service>
+        
+        <!-- Required SDK 核心功能-->
+        <service 
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter >
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="com.lester.uparent"/>
+            </intent-filter>
+        </service>
+        
+        
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+             <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
+                <category android:name="com.lester.uparent" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+             <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+   
+        </receiver>
+        
+        <!-- Required SDK核心功能-->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+        
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+        <receiver
+            android:name="com.example.jpushdemo.MyReceiver" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />  
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!--Optional 用户接受Rich Push Javascript 回调函数的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.lester.uparent" />
+            </intent-filter>
+        </receiver>
+ 
+        
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="0e9035a65bd9052e5104caab" /> <!--  </>值来自开发者平台取得的AppKey-->
+        
+<!--         jpush -->
+        
+<!--            qq分享 -->
+			<activity
+			android:name="com.tencent.tauth.AuthActivity" 
+			android:noHistory="true" 
+			android:launchMode="singleTask" >
+			<intent-filter>
+			<action android:name="android.intent.action.VIEW" />
+			<category android:name="android.intent.category.DEFAULT" />
+			<category android:name="android.intent.category.BROWSABLE" />
+			<data android:scheme="tencent1104828184" />
+			</intent-filter>
+			</activity>
+			<activity android:name="com.tencent.connect.common.AssistActivity"
+				android:theme="@android:style/Theme.Translucent.NoTitleBar"
+				android:configChanges="orientation|keyboardHidden|screenSize" 
+				/>
+<!--            qq分享 -->
+           
+<!--                 短信用 -->
+        <activity
+        android:name="com.mob.tools.MobUIShell"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:windowSoftInputMode="stateHidden|adjustResize" />
+<!--                 短信用 -->
+		<!--          微信分享 -->
+        <receiver
+            android:name=".AppRegister"
+            android:permission="com.tencent.mm.plugin.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+        <!--          微信分享 -->
+    </application>
+
+</manifest>

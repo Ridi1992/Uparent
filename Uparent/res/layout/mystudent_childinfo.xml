@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:charlie="http://schemas.android.com/apk/res/com.lester.uparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backhuise"
+    android:orientation="vertical" >
+	<LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/whiteback"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+          <com.lester.headview.CustomImageView
+	          android:id="@+id/childhead"
+	          android:layout_width="@dimen/bigheadwidth"
+	          android:layout_height="@dimen/bigheadheight"
+	          android:layout_centerHorizontal="true"
+	          android:layout_centerVertical="true"
+	          android:layout_gravity="center_vertical|center_horizontal"
+	          charlie:src="@drawable/u122"
+	          charlie:type="circle" />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+            <TextView 
+                android:id="@+id/studentname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/itemtext"
+                android:textSize="@dimen/text_14"
+                android:layout_weight="1"
+                />
+             <ImageView 
+                android:id="@+id/sex"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                />
+             <TextView 
+                 android:id="@+id/nation"
+                 android:gravity="center_vertical|center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/itemtext"
+                android:textSize="@dimen/text_14"
+                android:layout_weight="1"/>
+              <TextView 
+                android:id="@+id/status"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_14"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+            <TextView 
+                android:id="@+id/entry_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/itemtext"
+                android:textSize="@dimen/text_14"
+                android:layout_weight="1"
+                />
+              <TextView 
+                android:id="@+id/birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/itemtext"
+                android:textSize="@dimen/text_14"
+                 android:layout_weight="1"
+                />
+        </LinearLayout>
+         <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/backhuise"
+            />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="孩子班级"
+                android:textColor="@color/itemtext"
+                android:textSize="@dimen/text_14" />
+
+             <TextView
+                 android:id="@+id/studentclass"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:textColor="@color/itemtext"
+                 android:textSize="@dimen/text_13" />
+
+        </LinearLayout>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/backhuise"
+            />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="身份证号"
+                android:textColor="@color/itemtext"
+                android:textSize="@dimen/text_14" />
+
+             <TextView
+                 android:id="@+id/id_card"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:textColor="@color/itemtext"
+                 android:textSize="@dimen/text_13" />
+
+        </LinearLayout>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/backhuise"
+            />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="出生地"
+                android:textColor="@color/itemtext"
+                android:textSize="@dimen/text_14" />
+
+             <TextView
+                 android:id="@+id/birthplace"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:textColor="@color/itemtext"
+                 android:textSize="@dimen/text_13" />
+
+        </LinearLayout>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/backhuise"
+            />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="户口所在地"
+                android:textColor="@color/itemtext"
+                android:textSize="@dimen/text_14" />
+
+             <TextView
+                 android:id="@+id/registered_place"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:textColor="@color/itemtext"
+                 android:textSize="@dimen/text_13" />
+
+        </LinearLayout>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/backhuise"
+            />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="紧急联系人"
+                android:textColor="@color/itemtext"
+                android:textSize="@dimen/text_14" />
+
+             <TextView
+                 android:id="@+id/urgent_link_man"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:textColor="@color/itemtext"
+                 android:textSize="@dimen/text_13" />
+
+        </LinearLayout>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/backhuise"
+            />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="紧急电话"
+                android:textColor="@color/itemtext"
+                android:textSize="@dimen/text_14" />
+
+             <TextView
+                 android:id="@+id/urgent_link_phone"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:textColor="@color/itemtext"
+                 android:textSize="@dimen/text_13" />
+
+        </LinearLayout>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/backhuise"
+            />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="家庭住址"
+                android:textColor="@color/itemtext"
+                android:textSize="@dimen/text_14" />
+
+             <TextView
+                 android:id="@+id/address"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:textColor="@color/itemtext"
+                 android:textSize="@dimen/text_13" />
+
+        </LinearLayout>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/backhuise"
+            />
+        <LinearLayout 
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="备注"
+                android:textColor="@color/itemtext"
+                android:textSize="@dimen/text_14" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:textColor="@color/itemtext"
+                 android:textSize="@dimen/text_13" />
+
+        </LinearLayout>
+        
+    </LinearLayout>
+ </LinearLayout>

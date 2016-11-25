@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="margin">10dp</dimen>
+    <dimen name="panding">10dp</dimen>
+ 	<dimen name="topbarheigth">45dp</dimen>
+ 	<dimen name="toptitle">18sp</dimen>
+ 	<dimen name="homeitemtext">14sp</dimen>
+ 	<dimen name="text_12">12sp</dimen>
+ 	<dimen name="text_13">13sp</dimen>
+ 	<dimen name="text_14">14sp</dimen>
+ 	<dimen name="text_16">16sp</dimen>
+ 	<dimen name="bttext">16sp</dimen>
+ 	<dimen name="bigheadwidth">100dp</dimen>
+ 	<dimen name="bigheadheight">100dp</dimen>
+ 	<dimen name="middleheadwidth">50dp</dimen>
+ 	<dimen name="middleheadheight">50dp</dimen>
+ 	<dimen name="m10dp">10dp</dimen>
+ 	<dimen name="item50dp">50dp</dimen>
+</resources>

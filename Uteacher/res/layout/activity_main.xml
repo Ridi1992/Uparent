@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity" >
+	<TextView 
+	    android:id="@+id/title"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/topbarheigth"
+	    android:textColor="@color/white"
+	    android:background="@color/topbar"
+	    android:textSize="@dimen/toptitle"
+	    android:gravity="center"
+	    />
+	<ImageView
+	    android:id="@+id/homeimg"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/u117"
+	    android:layout_weight="1"
+	    android:scaleType="centerCrop"
+	    />
+	<GridView
+	    android:id="@+id/gripview"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:numColumns="4"
+	    android:scrollbars="@null"
+	    ></GridView>
+</LinearLayout>

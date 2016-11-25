@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:charlie="http://schemas.android.com/apk/res/com.lester.uparent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainactivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity" >
+    <FrameLayout 
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/topbarheigth"
+        >
+        <TextView 
+	    android:id="@+id/title"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/topbarheigth"
+	    android:textColor="@color/white"
+	    android:background="@color/topbar"
+	    android:textSize="@dimen/toptitle"
+	    android:gravity="center"
+	    />
+
+         <TextView
+             android:id="@+id/selectchild"
+             android:layout_width="80dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="right"
+             android:background="@drawable/back"
+             android:gravity="center"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+             android:text="选小孩"
+             android:textColor="@android:color/white"
+             android:textSize="14sp" />
+        
+        <com.lester.headview.CustomImageView
+         android:id="@+id/head"
+         android:visibility="gone"
+         android:layout_width="@dimen/topbarheigth"
+         android:layout_height="@dimen/topbarheigth"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:layout_gravity="center_vertical"
+         charlie:src="@drawable/u122"
+         charlie:type="circle" />
+        
+    </FrameLayout>
+	
+	<LinearLayout
+        android:id="@+id/layout"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </LinearLayout>
+	<include 
+	    layout="@layout/tabbar"
+	    />
+</LinearLayout>

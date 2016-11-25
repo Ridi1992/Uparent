@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backhuise"
+    android:orientation="vertical" >
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/topbarheigth"
+        android:background="@color/topbar"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="接送登记"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/toptitle" />
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="@android:color/white"
+            android:background="@drawable/back"
+             android:drawableLeft="@drawable/backimg"
+            android:textSize="14sp" />
+    </FrameLayout>
+	<LinearLayout 
+	    android:background="@color/white"
+	    android:padding="10dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="100dp"
+	    android:orientation="horizontal"
+	    android:gravity="center_horizontal"
+	    >
+	    <ImageView
+	        android:visibility="gone"
+	        android:id="@+id/img"
+	        android:layout_width="80dp"
+	        android:layout_height="match_parent"
+	        android:scaleType="centerInside"
+	        />
+	    <ImageView
+	        android:id="@+id/camera"
+	        android:layout_width="80dp"
+	        android:layout_height="match_parent"
+	        android:src="@drawable/u20"
+	        android:background="@drawable/cameraback"
+	        />
+	</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/backhuise" 
+        />
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+	     android:background="@color/white"
+	    >
+	    <TextView
+	        android:layout_marginLeft="10dp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="姓          名"
+                android:textColor="@color/itemtext"
+                android:textSize="@dimen/text_16" />
+	    <EditText
+	         	android:background="@drawable/editback"
+	        	android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/edittext"
+                android:textSize="@dimen/text_16" 
+                android:gravity="center_vertical"/>
+	</LinearLayout>
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/backhuise" 
+        />
+	   <LinearLayout
+	     android:background="@color/white" 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal"
+	     android:gravity="center_vertical"
+	    >
+	    <TextView
+	        android:layout_marginLeft="10dp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="身份证号码"
+                android:textColor="@color/itemtext"
+                android:textSize="@dimen/text_16" />
+	    <EditText
+	         android:background="@drawable/editback"
+	        	android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/edittext"
+                android:textSize="@dimen/text_16"
+                android:gravity="center_vertical" />
+	</LinearLayout>
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/backhuise" 
+        />
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+	     android:background="@color/white"
+	    >
+	<EditText
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/editback"
+	    android:gravity="center_vertical"
+	    android:hint="异常原因......"
+	    android:minHeight="100dp"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:textColor="@color/edittext"
+	    android:textSize="@dimen/text_16" />
+	</LinearLayout>
+	<TextView 
+        android:id="@+id/makesure"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="@color/white"
+        android:background="@drawable/orangebt"
+        android:text="确认无误"
+        android:textSize="@dimen/bttext"
+        android:gravity="center"
+        />
+	
+</LinearLayout>

@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:charlie="http://schemas.android.com/apk/res/com.lester.uteacher"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity" >
+	 <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/topbarheigth"
+        android:background="@color/topbar"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/bartitle"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="食谱"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/toptitle" />
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="@android:color/white"
+            android:background="@drawable/back"
+             android:drawableLeft="@drawable/backimg"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/selectclass"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/back"
+            android:textSize="14sp" />
+    </FrameLayout>
+   
+    <include layout="@layout/couserbar"/>
+    
+     <FrameLayout
+	        android:id="@+id/FLayout"
+	        android:layout_weight="1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content">
+	    	<com.teacher.View.ScrollControllViewPager
+	        android:id="@+id/vp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	         >
+	    	</com.teacher.View.ScrollControllViewPager>
+           <LinearLayout
+            android:id="@+id/indicator"
+            android:layout_gravity="bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="horizontal" >
+        </LinearLayout>
+        </FrameLayout>
+      
+       
+</LinearLayout>

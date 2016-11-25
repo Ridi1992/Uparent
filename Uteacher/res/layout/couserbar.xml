@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       
+        >
+
+        <TextView
+            android:id="@+id/bar0"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@color/chengse"
+            android:gravity="center"
+            android:text="周一"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+        <View 
+            android:layout_width="1px" 
+            android:layout_height="match_parent"
+            android:background="@color/backhuise"
+            />
+
+        <TextView
+            android:id="@+id/bar1"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@color/chengse"
+            android:gravity="center"
+            android:text="周二"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+         <View 
+            android:layout_width="1px" 
+            android:layout_height="match_parent"
+            android:background="@color/backhuise"
+            />
+
+        <TextView
+            android:id="@+id/bar2"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@color/chengse"
+            android:gravity="center"
+            android:text="周三"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+         <View 
+            android:layout_width="1px" 
+            android:layout_height="match_parent"
+            android:background="@color/backhuise"
+            />
+
+        <TextView
+            android:id="@+id/bar3"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@color/chengse"
+            android:gravity="center"
+            android:text="周四"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+         <View 
+            android:layout_width="1px" 
+            android:layout_height="match_parent"
+            android:background="@color/backhuise"
+            />
+
+        <TextView
+            android:id="@+id/bar4"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@color/chengse"
+            android:gravity="center"
+            android:text="周五"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+         <View 
+            android:layout_width="1px" 
+            android:layout_height="match_parent"
+            android:background="@color/backhuise"
+            />
+
+        <TextView
+            android:id="@+id/bar5"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@color/chengse"
+            android:gravity="center"
+            android:text="周六"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+         <View 
+            android:layout_width="1px" 
+            android:layout_height="match_parent"
+            android:background="@color/backhuise"
+            />
+
+        <TextView
+            android:id="@+id/bar6"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@color/chengse"
+            android:gravity="center"
+            android:text="周天"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

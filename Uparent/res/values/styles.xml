@@ -1,0 +1,77 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    
+    <style name="LodingDialog" parent="@android:style/Theme.Dialog">  
+	<item name="android:background">#00000000</item> <!-- 设置自定义布局的背景透明 -->
+	<item name="android:windowBackground">@android:color/transparent</item>  <!-- 设置window背景透明，也就是去边框 -->
+         <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+    
+    
+    <!-- 自定义提示框-->  
+   <style name="MyDialog" parent="@android:Theme.Dialog">       
+         <item name="android:windowFrame">@null</item>       
+         <item name="android:windowNoTitle">true</item>       
+        <item name="android:windowBackground">@android:color/transparent</item>
+      	<item name="android:windowIsFloating">true</item>     
+       <item name="android:windowContentOverlay">@null</item>   
+        </style>
+    
+    <style name="main_bar_text_style">
+        <item name="android:textColor">@color/topbar</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+     <style name="myedittextstyle14">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textColor">@color/edittext</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="myedittextstyle12">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textColor">@color/edittext</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+    <!--     自定义的星星 -->
+    <style name="roomRatingBar" 
+        parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/room_rating_bar</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:maxHeight">45dp</item>
+    </style>
+</resources>

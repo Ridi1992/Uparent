@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:charlie="http://schemas.android.com/apk/res/com.lester.uteacher"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+     >
+
+    <LinearLayout
+        android:id="@+id/ll_cotentview"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+    	android:background="@color/white"
+        android:orientation="horizontal"
+         >
+         <FrameLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="match_parent"
+             >
+		<LinearLayout
+        android:id="@+id/cotentview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    	android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_marginLeft="3dp"
+         >
+<!--          <CheckBox -->
+<!--             android:id="@+id/check" -->
+<!--             android:background="@drawable/checkbt" -->
+<!--             android:layout_width="20dp" -->
+<!--             android:layout_height="20dp" -->
+<!--             android:layout_marginLeft="10dp" -->
+<!--             android:layout_gravity="center_vertical" -->
+<!--             android:button="@null"/> -->
+         <com.teacher.View.CircleImageView
+	          android:id="@+id/head"
+	          android:layout_margin="2dp"
+	          android:layout_width="@dimen/middleheadwidth"
+	          android:layout_height="@dimen/middleheadheight"
+	          android:layout_centerHorizontal="true"
+	          android:layout_centerVertical="true"
+	          android:layout_gravity="center_vertical|center_horizontal"
+	          charlie:src="@drawable/u122"
+	          charlie:type="circle" />
+         <LinearLayout 
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+			android:layout_weight="1"
+             >
+             <LinearLayout 
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="1"
+                 android:orientation="horizontal"
+                 android:gravity="center_vertical"
+                 >
+                 <TextView 
+                     android:id="@+id/name"
+                     android:layout_width="80dp"
+                     android:layout_height="wrap_content"
+                     android:textColor="@color/itemtext"
+                     android:textSize="@dimen/text_16"
+                     android:gravity="center_vertical"
+                     android:singleLine="true"
+                     android:text="张三"
+                     />
+
+                 <ImageView
+                     android:id="@+id/sex"
+                     android:layout_width="25dp"
+                     android:layout_height="25dp" />
+
+                 <TextView 
+                     android:id="@+id/hasFeedback"
+                     android:layout_weight="1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textColor="@color/huise"
+                     android:textSize="@dimen/text_14"
+                     android:gravity="center_vertical|right"
+                     android:layout_marginRight="10dp"
+                     android:text="未反馈"
+                     />
+                 <ImageView 
+                     android:id="@+id/check"
+                     android:layout_width="60dp"
+                     android:padding="18dp"
+                     android:layout_height="match_parent"
+                     android:src="@drawable/check"
+                     />
+             </LinearLayout>
+         </LinearLayout>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/status"
+            android:text="车上"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="30dp" 
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/ischeshang"/>
+        </LinearLayout>
+        <TextView 
+            android:id="@+id/log"
+            android:layout_gravity="right|top"
+            android:layout_width="20dp"
+            android:layout_height="20dp" 
+            />
+		
+		</FrameLayout>
+		<TextView
+            android:id="@+id/bt"
+            android:layout_marginRight="-60dp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/chengse"
+            android:text="还原" />
+        </LinearLayout>
+ </LinearLayout>

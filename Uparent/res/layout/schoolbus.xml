@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:charlie="http://schemas.android.com/apk/res/com.lester.uparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backhuise"
+    android:orientation="vertical" >
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/topbarheigth"
+        android:background="@color/topbar"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/bartitle"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="校车接送"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/toptitle" />
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="@android:color/white"
+            android:background="@drawable/back"
+             android:drawableLeft="@drawable/backimg"
+            android:textSize="14sp" />
+    </FrameLayout>
+	<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+        android:id="@+id/ll_cotentview"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+    	android:background="@drawable/whiteback"
+        android:orientation="horizontal"
+         >
+		<LinearLayout
+        android:id="@+id/cotentview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    	android:background="@color/white"
+        android:orientation="horizontal"
+       android:layout_margin="10dp"
+         >
+         <ImageView 
+             android:layout_width="50dp"
+             android:layout_height="30dp"
+             android:src="@drawable/u200"        
+             android:layout_gravity="center_vertical"    
+             />
+         <LinearLayout 
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+			android:layout_weight="1"
+             >
+             <LinearLayout 
+                 android:layout_width="wrap_content"
+                 android:layout_height="0dp"
+                 android:layout_weight="1"
+                 android:orientation="horizontal"
+                 android:gravity="bottom"
+                 android:layout_marginBottom="2dp"
+                 >
+                 <TextView 
+                     android:id="@+id/address"
+                     android:singleLine="true"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textColor="@color/itemtext"
+                     android:textSize="@dimen/text_16"
+                     android:gravity="center_vertical"
+                     android:ellipsize="end"
+                     />
+             </LinearLayout>
+             <LinearLayout 
+                 android:layout_marginTop="2dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="1"
+                 android:orientation="horizontal"
+                 >
+                 <TextView 
+                     android:id="@+id/num"
+                     android:layout_weight="1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textColor="@color/huise"
+                     android:textSize="@dimen/text_14"
+                     android:gravity="center_vertical"
+                     />
+             	</LinearLayout>
+         </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+        <FrameLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/whiteback"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="跟车老师"
+                android:gravity="center_horizontal"
+                android:textColor="@color/itemtext"
+                android:textSize="@dimen/text_16"
+                android:layout_weight="1" 
+                android:layout_gravity="center_vertical"/>
+ 			<ImageView 
+ 			    android:id="@+id/call"
+			    android:layout_height="25dp"
+			    android:layout_width="25dp"
+			    android:src="@drawable/call"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:textColor="@color/itemtext"
+                android:textSize="@dimen/text_14" />
+
+             <TextView
+                 android:id="@+id/teacherName"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:textColor="@color/itemtext"
+                 android:textSize="@dimen/text_13" />
+
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="性别"
+                android:textColor="@color/itemtext"
+                android:textSize="@dimen/text_14" />
+
+             <TextView
+                 android:id="@+id/sex"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:textColor="@color/itemtext"
+                 android:textSize="@dimen/text_13" />
+
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+
+            <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="电话"
+            android:textColor="@color/itemtext"
+            android:textSize="@dimen/text_14" />
+
+            <TextView
+            android:id="@+id/teacherPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/itemtext"
+            android:textSize="@dimen/text_13" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView 
+        android:layout_margin="5dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/jiesong"
+        />
+    </FrameLayout>
+	    <WebView 
+		    android:id="@+id/webview"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="5dp"
+		    android:scrollbars="none">
+		</WebView>
+    </LinearLayout>
+    
+</ScrollView>
+</LinearLayout>
